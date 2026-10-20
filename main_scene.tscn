@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://c6jkds74fn2mm"]
+
+[ext_resource type="PackedScene" uid="uid://rnw6vjamikjk" path="res://interactable.tscn" id="1_0f027"]
+[ext_resource type="Script" uid="uid://b14ibfsjpw2ev" path="res://main_scene.gd" id="1_2c62f"]
+
+[node name="Node2D" type="Node2D" unique_id=478873274]
+script = ExtResource("1_2c62f")
+
+[node name="Food" parent="." unique_id=1543816527 instance=ExtResource("1_0f027")]
+position = Vector2(514, 423)
+
+[node name="Label" type="Label" parent="Food" unique_id=1865250852]
+offset_left = -55.0
+offset_top = -127.0
+offset_right = 75.0
+offset_bottom = -82.0
+theme_override_font_sizes/font_size = 32
+text = "Food: 10"
+metadata/_edit_use_anchors_ = true
+
+[node name="Stones" parent="." unique_id=177140979 instance=ExtResource("1_0f027")]
+position = Vector2(929, 479)
+
+[node name="Label" type="Label" parent="Stones" unique_id=1190350708]
+offset_left = -60.0
+offset_top = -119.0
+offset_right = 70.0
+offset_bottom = -74.0
+theme_override_font_sizes/font_size = 32
+text = "Food: 10"
+metadata/_edit_use_anchors_ = true
+
+[node name="CostLabel" type="Label" parent="Stones" unique_id=1044606600]
+offset_left = -68.0
+offset_top = -161.0
+offset_right = 115.0
+offset_bottom = -116.0
+theme_override_font_sizes/font_size = 32
+text = "Cost: 1 food"
+metadata/_edit_use_anchors_ = true
+
+[node name="Stonehenge" parent="." unique_id=632014726 instance=ExtResource("1_0f027")]
+position = Vector2(1348, 462)
+
+[node name="Label" type="Label" parent="Stonehenge" unique_id=1383101789]
+offset_left = -53.0
+offset_top = -115.0
+offset_right = 77.0
+offset_bottom = -70.0
+theme_override_font_sizes/font_size = 32
+text = "Food: 10"
+metadata/_edit_use_anchors_ = true
+
+[node name="CostLabel" type="Label" parent="Stonehenge" unique_id=1932659107]
+offset_left = -57.0
+offset_top = -156.0
+offset_right = 178.0
+offset_bottom = -111.0
+theme_override_font_sizes/font_size = 32
+text = "Cost: 100 stone"
+metadata/_edit_use_anchors_ = true
+
+[node name="Huts" parent="." unique_id=224760391 instance=ExtResource("1_0f027")]
+position = Vector2(494, 653)
+
+[node name="Label" type="Label" parent="Huts" unique_id=1756445892]
+offset_left = -74.0
+offset_top = -120.0
+offset_right = 56.0
+offset_bottom = -75.0
+theme_override_font_sizes/font_size = 32
+text = "Food: 10"
+metadata/_edit_use_anchors_ = true
+
+[node name="CostLabel" type="Label" parent="Huts" unique_id=1813678698]
+offset_left = -79.0
+offset_top = -154.0
+offset_right = 120.0
+offset_bottom = -109.0
+theme_override_font_sizes/font_size = 32
+text = "Cost: 5 stone"
+metadata/_edit_use_anchors_ = true

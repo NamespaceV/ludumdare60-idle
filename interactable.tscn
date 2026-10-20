@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://rnw6vjamikjk"]
+
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_jcy0q"]
+[ext_resource type="Script" uid="uid://55ha8cmsgkb6" path="res://interactable.gd" id="2_0k2he"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dcfd"]
+size = Vector2(130, 130)
+
+[node name="ClickMe" type="Sprite2D" unique_id=632014726]
+texture = ExtResource("1_jcy0q")
+script = ExtResource("2_0k2he")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=220904511]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=161585623]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_7dcfd")
